@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF3F0C1D25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F0C1C25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift */; };
+		BF3F0C1F25FB7A2000848EF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F0C1E25FB7A2000848EF3 /* ContentView.swift */; };
+		BF3F0C2125FB7A2500848EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3F0C2025FB7A2500848EF3 /* Assets.xcassets */; };
+		BF3F0C2425FB7A2500848EF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3F0C2325FB7A2500848EF3 /* Preview Assets.xcassets */; };
+		BF3F0C2D25FB7A4400848EF3 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F0C2C25FB7A4400848EF3 /* AppView.swift */; };
+		BF3F0C3925FBA10F00848EF3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F0C3825FBA10F00848EF3 /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF3F0C1925FB7A2000848EF3 /* AFPEactiviteAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFPEactiviteAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3F0C1C25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFPEactiviteAppStoreApp.swift; sourceTree = "<group>"; };
+		BF3F0C1E25FB7A2000848EF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF3F0C2025FB7A2500848EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF3F0C2325FB7A2500848EF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF3F0C2525FB7A2500848EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF3F0C2C25FB7A4400848EF3 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		BF3F0C3825FBA10F00848EF3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF3F0C1625FB7A2000848EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF3F0C1025FB7A2000848EF3 = {
+			isa = PBXGroup;
+			children = (
+				BF3F0C1B25FB7A2000848EF3 /* AFPEactiviteAppStore */,
+				BF3F0C1A25FB7A2000848EF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF3F0C1A25FB7A2000848EF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF3F0C1925FB7A2000848EF3 /* AFPEactiviteAppStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF3F0C1B25FB7A2000848EF3 /* AFPEactiviteAppStore */ = {
+			isa = PBXGroup;
+			children = (
+				BF3F0C1C25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift */,
+				BF3F0C1E25FB7A2000848EF3 /* ContentView.swift */,
+				BF3F0C2C25FB7A4400848EF3 /* AppView.swift */,
+				BF3F0C3825FBA10F00848EF3 /* Model.swift */,
+				BF3F0C2025FB7A2500848EF3 /* Assets.xcassets */,
+				BF3F0C2525FB7A2500848EF3 /* Info.plist */,
+				BF3F0C2225FB7A2500848EF3 /* Preview Content */,
+			);
+			path = AFPEactiviteAppStore;
+			sourceTree = "<group>";
+		};
+		BF3F0C2225FB7A2500848EF3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BF3F0C2325FB7A2500848EF3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF3F0C1825FB7A2000848EF3 /* AFPEactiviteAppStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3F0C2825FB7A2500848EF3 /* Build configuration list for PBXNativeTarget "AFPEactiviteAppStore" */;
+			buildPhases = (
+				BF3F0C1525FB7A2000848EF3 /* Sources */,
+				BF3F0C1625FB7A2000848EF3 /* Frameworks */,
+				BF3F0C1725FB7A2000848EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFPEactiviteAppStore;
+			productName = AFPEactiviteAppStore;
+			productReference = BF3F0C1925FB7A2000848EF3 /* AFPEactiviteAppStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF3F0C1125FB7A2000848EF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					BF3F0C1825FB7A2000848EF3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = BF3F0C1425FB7A2000848EF3 /* Build configuration list for PBXProject "AFPEactiviteAppStore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF3F0C1025FB7A2000848EF3;
+			productRefGroup = BF3F0C1A25FB7A2000848EF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF3F0C1825FB7A2000848EF3 /* AFPEactiviteAppStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF3F0C1725FB7A2000848EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3F0C2425FB7A2500848EF3 /* Preview Assets.xcassets in Resources */,
+				BF3F0C2125FB7A2500848EF3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF3F0C1525FB7A2000848EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3F0C1F25FB7A2000848EF3 /* ContentView.swift in Sources */,
+				BF3F0C1D25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift in Sources */,
+				BF3F0C2D25FB7A4400848EF3 /* AppView.swift in Sources */,
+				BF3F0C3925FBA10F00848EF3 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF3F0C2625FB7A2500848EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF3F0C2725FB7A2500848EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF3F0C2925FB7A2500848EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AFPEactiviteAppStore/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2NNJR7846;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AFPEactiviteAppStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yoko.AFPEactiviteAppStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF3F0C2A25FB7A2500848EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AFPEactiviteAppStore/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2NNJR7846;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AFPEactiviteAppStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yoko.AFPEactiviteAppStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF3F0C1425FB7A2000848EF3 /* Build configuration list for PBXProject "AFPEactiviteAppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3F0C2625FB7A2500848EF3 /* Debug */,
+				BF3F0C2725FB7A2500848EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3F0C2825FB7A2500848EF3 /* Build configuration list for PBXNativeTarget "AFPEactiviteAppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3F0C2925FB7A2500848EF3 /* Debug */,
+				BF3F0C2A25FB7A2500848EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF3F0C1125FB7A2000848EF3 /* Project object */;
+}
