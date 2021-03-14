@@ -22,11 +22,11 @@ struct HowToGet: Hashable, Identifiable {
     var howToGetDescription: String
 }
 
-let cloud = HowToGet(howToGetIcon: "photo", howToGetDescription: "")
+let cloud = HowToGet(howToGetIcon: "icloud.and.arrow.down", howToGetDescription: "")
 
-let rmc = Application(name: "RMC Sport - Live TV, Replay", description: "Ligue des Champions en live", appIcon: "photo", howToGet: cloud)
-let rmc2 = Application(name: "RMC Sport - Live TV, Replay", description: "Ligue des Champions en live", appIcon: "photo", howToGet: cloud)
+let rmc = Application(name: "RMC Sport - Live TV, Replay", description: "Ligue des Champions en live", appIcon: "rmc", howToGet: cloud)
 
+let applications = [rmc, rmc, rmc, rmc, rmc, rmc, rmc, rmc, rmc, rmc]
 
 struct Journal: Hashable {
     //var id = UUID()
@@ -36,8 +36,16 @@ struct Journal: Hashable {
     var imageJounal: String
 }
 
-let welcomeOrginals = Journal(introduction: "Les Femmes à L'Honneur", title: "Welcome Originals", description: "Les conceils d'une cheffe étoilée ⭐️" , imageJounal: "photo")
+let welcomeOrginals = Journal(introduction: "Les Femmes à L'Honneur", title: "Welcome Originals", description: "Les conceils d'une cheffe étoilée ⭐️" , imageJounal: "homme")
 
 let journals = [welcomeOrginals, welcomeOrginals, welcomeOrginals]
 
-let applications = [rmc, rmc, rmc, rmc, rmc, rmc, rmc, rmc, rmc, rmc]
+
+struct CategoryApplications: Hashable {
+    var title: String
+    var apps = [Application]()
+}
+
+let selectionSemaine = CategoryApplications(title: "La sélection de la semaine", apps: applications)
+
+let categoriesApps = [selectionSemaine, selectionSemaine, selectionSemaine]

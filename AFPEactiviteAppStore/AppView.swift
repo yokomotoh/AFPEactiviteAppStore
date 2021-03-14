@@ -9,77 +9,57 @@ import SwiftUI
 
 struct AppView: View {
     
-    let rows: [GridItem] = Array(repeating: .init(.fixed(50)), count:3)
-    //[GridItem(.fixed(50)), GridItem(.fixed(50)),GridItem(.fixed(50))]
-    //let columns = [GridItem(.adaptive(minimum: 80))]
+    let rows: [GridItem] = Array(repeating: .init(.fixed(70)), count:3)
     
     var body: some View {
         NavigationView{
+            GeometryReader { geometry in
             List {
                 //VStack{
                 ScrollView(.horizontal) {
-                HStack{
+                    HStack {
                     ForEach(journals, id: \.self) {item in
                         VStack(alignment: .leading, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/){
-                            Text(item.introduction).font(.caption).foregroundColor(Color.blue)
-                            Text(item.title).font(.headline)
-                            Text(item.description).foregroundColor(Color.gray)
-                            Image(systemName: item.imageJounal)
+                            Text(item.introduction).font(.caption).foregroundColor(Color.blue).textCase(.uppercase)
+                            Text(item.title).font(.title2)
+                            Text(item.description).font(.title3).foregroundColor(Color.gray)
+                            
+                            Image( item.imageJounal).resizable().aspectRatio(contentMode: .fit).frame(width: geometry.size.width*0.9)
+                        }
+                        
                         }
                     }
                 }
-                }
-                Section(header: Text("La sélection de la semanie")) {
-                ScrollView(.horizontal){
-                    LazyHGrid(rows: rows, content: {
-                        ForEach(0..<applications.count) { num in
+                
+                ForEach(categoriesApps, id: \.self) { itemCategoryApp in
+                    Section(header:
+                        VStack{
+                        Spacer()
+                        HStack {
+                            Text("\(itemCategoryApp.title)").font(.title3).fontWeight(.bold).multilineTextAlignment(.leading).padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/).autocapitalization(.sentences)//.textCase(.lowercase)
+                        Spacer()
+                            Button(action: {Text("detail")}, label: {Text("Tout voir").font(.callout).padding(.trailing, 25).autocapitalization(.sentences)//.textCase(.lowercase)
+                        })
+                        }
+                        Spacer()
+                        }
+                        .background(Color.white)
+                        .listRowInsets(EdgeInsets(top: 0,leading: 0,bottom: 0,trailing: 0))
+                                .padding(.trailing)//.background(FillAll(color: .white))
+                    ){
+                    ScrollView(.horizontal){
+                        LazyHGrid(rows: rows, content: {
+                            ForEach(0..<itemCategoryApp.apps.count) { num in
                                 EachGridCell(item: applications[num])
+                                    .frame(width: geometry.size.width*0.9, alignment: .leading)
                             }
                         })
-                }
-                }
-            
-            /*
-            ScrollView(.horizontal) {
-                HStack{
-                    let listNum = applications.count
-                    ForEach(0..<listNum/3+1) {item3 in
-                        let countRest = listNum - (item3*3)
-                        VStack(alignment: .leading)  {
-                            //Text("\(item3)")
-                            ForEach(0..<min(3,countRest)) {item in
-                                EachGridCell(item: applications[item3*3+item])
-                                /*
-                                VStack{
-                                Text("\(applications[item3*3+item].name)")
-                                Text("\(applications[item3*3+item].description)")
-                                Image(systemName: application[item3*3+item].appIcon)
-    */
-                                }
-                            }
-                        }
-                    }
-                }
-                 */
-            
-            
-                /*
-                ScrollView(.horizontal) {
-                    LazyHGrid(rows: rows) {
-                        ForEach(applications, id: \.self) { item in
-                            //Text(item)
-                            EachGridCell(item: item)
-                        }
-                    }
-                    .frame(height: 50)
-                }
-                */
-     
-
-     
-            //}
-            .padding(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                .navigationTitle("Apps")
+                    }.padding(.bottom)}
+                }.textCase(nil)
+            }
+            .padding(.trailing, -15)
+            .navigationTitle("Apps")
+            .listStyle(PlainListStyle())
             }
         }
     }
@@ -91,22 +71,34 @@ struct AppView_Previews: PreviewProvider {
     }
 }
 
-
-let testList = ["asdfho","bsdSDSDC","cSDCFSD","dSDV","eDVFERA","fdf","dfgbdrbg","hbdgb","ifbd","jdgb","kedb"]
-
 struct EachGridCell: View {
     var item: Application
     var body: some View {
         HStack{
-            Image(systemName: item.appIcon)
+            Image(item.appIcon)
+                .resizable().aspectRatio(contentMode: .fit).frame(width: 60, height: 60).scaledToFill()
+
             VStack(alignment: .leading, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/){
                 Text(item.name).font(.headline)
                 Text(item.description).font(.caption).foregroundColor(.gray)
             }
+            Spacer()
             VStack{
-                Image(systemName: item.howToGet.howToGetIcon)
+                Image(systemName: item.howToGet.howToGetIcon).resizable().aspectRatio(contentMode: .fit).frame(width: 20, height: 20)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 //Text(item.howToGet.howToGetDescription)
             }
-        }//.padding()
+            Spacer()
+        }
+    }
+}
+
+struct FillAll: View {
+    let color: Color
+    
+    var body: some View {
+        GeometryReader { proxy in
+            self.color.frame(width: proxy.size.width * 1.3).fixedSize()
+        }
     }
 }
