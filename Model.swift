@@ -49,3 +49,10 @@ struct CategoryApplications: Hashable {
 let selectionSemaine = CategoryApplications(title: "La sélection de la semaine", apps: applications)
 
 let categoriesApps = [selectionSemaine, selectionSemaine, selectionSemaine]
+
+struct Profile {
+    var name: String
+    var profilePhoto: String
+}
+
+let myProfile = Profile(name: "Yoko", profilePhoto: "profil")

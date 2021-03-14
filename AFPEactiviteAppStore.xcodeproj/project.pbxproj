@@ -13,6 +13,7 @@
 		BF3F0C2425FB7A2500848EF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3F0C2325FB7A2500848EF3 /* Preview Assets.xcassets */; };
 		BF3F0C2D25FB7A4400848EF3 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F0C2C25FB7A4400848EF3 /* AppView.swift */; };
 		BF3F0C3925FBA10F00848EF3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F0C3825FBA10F00848EF3 /* Model.swift */; };
+		BF618F4F25FEA25400452731 /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF618F4E25FEA25400452731 /* AppDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BF3F0C2525FB7A2500848EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF3F0C2C25FB7A4400848EF3 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		BF3F0C3825FBA10F00848EF3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = SOURCE_ROOT; };
+		BF618F4E25FEA25400452731 /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BF3F0C1C25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift */,
 				BF3F0C1E25FB7A2000848EF3 /* ContentView.swift */,
 				BF3F0C2C25FB7A4400848EF3 /* AppView.swift */,
+				BF618F4E25FEA25400452731 /* AppDetailView.swift */,
 				BF3F0C3825FBA10F00848EF3 /* Model.swift */,
 				BF3F0C2025FB7A2500848EF3 /* Assets.xcassets */,
 				BF3F0C2525FB7A2500848EF3 /* Info.plist */,
@@ -146,6 +149,7 @@
 			files = (
 				BF3F0C1F25FB7A2000848EF3 /* ContentView.swift in Sources */,
 				BF3F0C1D25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift in Sources */,
+				BF618F4F25FEA25400452731 /* AppDetailView.swift in Sources */,
 				BF3F0C2D25FB7A4400848EF3 /* AppView.swift in Sources */,
 				BF3F0C3925FBA10F00848EF3 /* Model.swift in Sources */,
 			);
