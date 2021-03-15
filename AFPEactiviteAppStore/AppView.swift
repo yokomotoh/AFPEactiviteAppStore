@@ -15,8 +15,9 @@ struct AppView: View {
         NavigationView{
             GeometryReader { geometry in
             List {
-                //VStack{
+                VStack{
                 ScrollView(.horizontal) {
+                //TabView {
                     HStack {
                     ForEach(journals, id: \.self) {item in
                         VStack(alignment: .leading, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/){
@@ -26,19 +27,19 @@ struct AppView: View {
                             
                             Image( item.imageJounal).resizable().aspectRatio(contentMode: .fit).frame(width: geometry.size.width*0.9).cornerRadius(10)
                         }
-                        
-                        }
+                    }
                     }
                 }
-                
+                }//.tabViewStyle(PageTabViewStyle())
+                Divider()
                 ForEach(categoriesApps, id: \.self) { itemCategoryApp in
                     Section(header:
                         VStack{
                         Spacer()
                         HStack {
                             Text("\(itemCategoryApp.title)").font(.title3).fontWeight(.bold).multilineTextAlignment(.leading).padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/).autocapitalization(.sentences)//.textCase(.lowercase)
-                        Spacer()
-                        NavigationLink(destination:  AppDetailView()){Text("Tout voir").font(.callout).padding(.trailing, 25).autocapitalization(.sentences)//.textCase(.lowercase)
+                            Spacer()
+                            NavigationLink(destination:  AppDetailView()){Text("Tout voir").font(.callout).padding(.trailing, 25).autocapitalization(.sentences)//.textCase(.lowercase)
                         }
                         }
                         Spacer()
@@ -129,7 +130,7 @@ struct ProfileIcon: View {
             //.aspectRatio(contentMode: .fill)
             .frame(width:40,height:40)
             .clipShape(Circle())
-            //.padding(.top, 90)
+            .padding(.top, 90) // it disappears when move to other views...
     }
 }
 

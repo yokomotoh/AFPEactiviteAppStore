@@ -2,7 +2,7 @@
 //  AppDetailView.swift
 //  AFPEactiviteAppStore
 //
-//  Created by vincent schmitt on 14/03/2021.
+//  Created by yoko on 14/03/2021.
 //
 
 import SwiftUI
@@ -39,6 +39,7 @@ struct EachRow: View {
                 Image(systemName: item.howToGet.howToGetIcon).resizable().aspectRatio(contentMode: .fit).frame(width: 20, height: 20)
                     .foregroundColor(.blue)
                 //Text(item.howToGet.howToGetDescription)
+                    
             }
             
             Spacer()

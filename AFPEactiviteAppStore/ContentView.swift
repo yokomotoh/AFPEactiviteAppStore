@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  AFPEactiviteAppStore
 //
-//  Created by vincent schmitt on 12/03/2021.
+//  Created by yoko on 12/03/2021.
 //
 
 import SwiftUI
