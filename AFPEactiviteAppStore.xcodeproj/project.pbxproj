@@ -14,6 +14,8 @@
 		BF3F0C2D25FB7A4400848EF3 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F0C2C25FB7A4400848EF3 /* AppView.swift */; };
 		BF3F0C3925FBA10F00848EF3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F0C3825FBA10F00848EF3 /* Model.swift */; };
 		BF618F4F25FEA25400452731 /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF618F4E25FEA25400452731 /* AppDetailView.swift */; };
+		BF820412261F0B44004BDFFF /* simulator2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF820410261F0B43004BDFFF /* simulator2.png */; };
+		BF820413261F0B44004BDFFF /* simulator1.png in Resources */ = {isa = PBXBuildFile; fileRef = BF820411261F0B44004BDFFF /* simulator1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BF3F0C2C25FB7A4400848EF3 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		BF3F0C3825FBA10F00848EF3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = SOURCE_ROOT; };
 		BF618F4E25FEA25400452731 /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
+		BF820410261F0B43004BDFFF /* simulator2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simulator2.png; sourceTree = "<group>"; };
+		BF820411261F0B44004BDFFF /* simulator1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simulator1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 				BF3F0C1C25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift */,
 				BF3F0C1E25FB7A2000848EF3 /* ContentView.swift */,
 				BF3F0C2C25FB7A4400848EF3 /* AppView.swift */,
+				BF820415261F0B4C004BDFFF /* images */,
 				BF618F4E25FEA25400452731 /* AppDetailView.swift */,
 				BF3F0C3825FBA10F00848EF3 /* Model.swift */,
 				BF3F0C2025FB7A2500848EF3 /* Assets.xcassets */,
@@ -76,6 +81,15 @@
 				BF3F0C2325FB7A2500848EF3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF820415261F0B4C004BDFFF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BF820411261F0B44004BDFFF /* simulator1.png */,
+				BF820410261F0B43004BDFFF /* simulator2.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +149,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF820412261F0B44004BDFFF /* simulator2.png in Resources */,
+				BF820413261F0B44004BDFFF /* simulator1.png in Resources */,
 				BF3F0C2425FB7A2500848EF3 /* Preview Assets.xcassets in Resources */,
 				BF3F0C2125FB7A2500848EF3 /* Assets.xcassets in Resources */,
 			);

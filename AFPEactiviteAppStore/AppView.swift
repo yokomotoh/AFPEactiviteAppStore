@@ -110,6 +110,11 @@ struct EachGridCell: View {
     }
 }
 
+/*struct EachGridcellRow: View {
+    
+}
+*/
+ 
 struct FillAll: View {
     let color: Color
     

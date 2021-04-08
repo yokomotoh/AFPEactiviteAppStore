@@ -50,3 +50,4 @@ struct EachRow: View {
         }
     }
 }
+
