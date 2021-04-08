@@ -47,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3F0C1B25FB7A2000848EF3 /* AFPEactiviteAppStore */,
+				BF820415261F0B4C004BDFFF /* images */,
 				BF3F0C1A25FB7A2000848EF3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +66,6 @@
 				BF3F0C1C25FB7A2000848EF3 /* AFPEactiviteAppStoreApp.swift */,
 				BF3F0C1E25FB7A2000848EF3 /* ContentView.swift */,
 				BF3F0C2C25FB7A4400848EF3 /* AppView.swift */,
-				BF820415261F0B4C004BDFFF /* images */,
 				BF618F4E25FEA25400452731 /* AppDetailView.swift */,
 				BF3F0C3825FBA10F00848EF3 /* Model.swift */,
 				BF3F0C2025FB7A2500848EF3 /* Assets.xcassets */,
